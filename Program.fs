@@ -1,10 +1,10 @@
-﻿
-type Path(path: string) =
-    member this.path = path
-    
-    member this.spath = "s" + path
-
+﻿module main
+open Path
 
 let path = new Path("pjt1")
 
-printfn "%A" path.spath
+[<EntryPoint>]
+let main args =
+    printfn "%A" path.spath
+    0
+    
